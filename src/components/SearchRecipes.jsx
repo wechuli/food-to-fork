@@ -20,7 +20,7 @@ const SearchRecipes = props => {
                 className="form-control"
                 value={searchValue}
                 onChange={handleChange}
-                required
+      
               />
               <div className="input-group-append">
                 <button className="input-group-text bg-primary">
