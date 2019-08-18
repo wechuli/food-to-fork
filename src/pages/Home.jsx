@@ -7,7 +7,7 @@ class Home extends Component {
     return (
       <>
         <Header title="Amazing Recipes">
-          <Link exact to="recipes" className="btn btn-secondary btn-lg mt-3 ">
+          <Link exact="true" to="recipes" className="btn btn-secondary btn-lg mt-3 ">
             Search Recipes
           </Link>
         </Header>

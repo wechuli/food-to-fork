@@ -7,7 +7,7 @@ export class Default extends Component {
     return (
       <Header title="404" styleClass="default-hero">
         <h2 className="text-light">You are in the wrong place</h2>
-        <Link exact to="/" className="btn btn-secondary btn-lg mt-3">
+        <Link exact="true" to="/" className="btn btn-secondary btn-lg mt-3">
           Return Home
         </Link>
       </Header>
