@@ -18,12 +18,18 @@ export class Recipes extends Component {
   };
   handleSubmit = e => {
     e.preventDefault();
+    alert(this.state.searchValue);
+    this.setState({ searchValue: "" });
   };
   render() {
     return (
       <>
-        <SearchRecipes search={this.state.searchValue} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
-        <RecipeList recipes={this.state.recipes}/>
+        <SearchRecipes
+          searchValue={this.state.searchValue}
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+        />
+        <RecipeList recipes={this.state.recipes} />
       </>
     );
   }
